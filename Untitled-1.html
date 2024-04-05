@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script> 
     <title>Zadanie1</title>
 </head>
 <body>
@@ -52,6 +53,14 @@
         <label for="opcja2"> opcja2</label> <br>
         <input type="submit" value="submit">
     </form>
+
+
+    <label for="dlugosc">Długość:</label>
+    <input type="number" id="dlugosc"><br>
+    <label for="szerokosc">Szerokość:</label>
+    <input type="number" id="szerokosc"><br>
+    <button onclick="utworzProstokat()">Utwórz prostokąt</button><br>
+    <div id="wynik"></div>
 
 </body>
 </html>
