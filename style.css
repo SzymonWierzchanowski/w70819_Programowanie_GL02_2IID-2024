@@ -11,3 +11,68 @@ article{
 a:hover{
     color: red;
 }
+
+
+.button-container {
+    display: flex;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+.active {
+    background-color: lightblue;
+}
+
+.buttonx {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonz {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.buttoni {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
