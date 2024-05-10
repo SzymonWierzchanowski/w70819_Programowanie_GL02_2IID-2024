@@ -92,6 +92,106 @@
     </tr>
 </table>
 
+
+<script src="formValidationFunc.js" defer></script>
+    <script src="lab8.js" defer></script>
+</head>
+
+<body>
+    <form class="form" name="form" novalidate>
+        <div class="control">
+            <label>Imie </label>
+            <input type="text" id="name" name="name">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Nazwisko </label>
+            <input type="text" id="surname" name="surname">
+        </div>
+        <div class="control">
+            <label>Email: </label>
+            <input type="email" name="email"/>
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Hasło: </label>
+            <input type="password" name="password">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Potwórz Hasło: </label>
+            <input type="password" name="confirm-password">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Płeć:</label>
+            <div>
+                <input type="radio" id="m" name="gender" value="m">
+                <label for="m">M</label>
+                <input type="radio" id="k" name="gender" value="k">
+                <label for="k">K</label>
+            </div>
+            <span id="genderError" class="error"></span>
+        </div>
+        <div class="control">
+            <label>Telefon: </label>
+            <input type="tel" name="phone">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Data urodzenia: </label>
+            <input type="date" name="birthDate">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Kraj: </label>
+            <select name="country">
+                <option></option>
+                <option value="Polska">Polska</option>
+                <option value="Ukraina">Ukraina</option>
+                <option value="Litwa">Litwa</option>
+                <option value="Niemcy">Niemcy</option>
+            </select>
+            <span class="error"></span>
+        </div>
+
+        <div class="control">
+            <label>Województwo: </label>
+            
+            <input type="text" disabled name="province">
+            
+            <select name="province" disabled hidden>
+                <option></option>
+                <option value="Podkarpacie">Podkarpacie</option>
+                <option value="Małopolska">Małopolska</option>
+                <option value="Mazowsze">Mazowsze</option>
+                <option value="Wielkopolska">Wielkopolska</option>
+            </select>
+            <span id="provinceError" class="error"></span>
+        </div>
+        <div class="control">
+            <label>Adres zamieszkania: </label>
+            <input type="text" disabled name="address">
+            <span class="error"></span>
+        </div>
+        <div>
+           
+            <input type="checkbox" checked name="hasSameContactAddress">
+            <label>Adres korespodencyjny taki sam jak zamieszkania </label>
+        </div>
+        <div class="contactAddress" hidden>
+            <div class="control">
+                <label>Adres korespodencyjny: </label>
+                <input type="text" disabled name="contactAddress">
+                <span class="error"></span>
+            </div>
+        </div>
+
+        <div class="control actions">
+            <input type="submit" value="Zapisz">
+        </div>
+    </form>
+
     
     
 </body>
